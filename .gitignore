@@ -1,0 +1,6 @@
+*.class
+*.iml
+out/
+# Ignore all XML files except for pom.xml
+*.xml
+!pom.xml
