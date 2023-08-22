@@ -11,7 +11,7 @@ public class Calculator {
         int operator;
 
 // Selecting Which Operator To Use
-        while (true) {
+//        while (true) {
             System.out.println("Calculator Menu:");
             System.out.println("1: Addition");
             System.out.println("2: Subtraction");
@@ -19,6 +19,7 @@ public class Calculator {
             System.out.println("4: Division");
             System.out.println("Please select a Math Operator (1 | 2 | 3 | 4 |");
 
+            while (true) {
             try {
                 operator = scanner.nextInt();
                 if (operator >= 1 && operator <= 4) {
@@ -28,7 +29,7 @@ public class Calculator {
                     scanner.nextLine();
                 }
             } catch (java.util.InputMismatchException e) {
-                System.out.println("Invalid selection!");
+                System.out.println("Invalid selection! Please select a number between 1 - 4");
                 scanner.nextLine();
             }
         }
@@ -90,14 +91,15 @@ public class Calculator {
                 results = num1 * num2;
                 break;
             case 4:
-                if (num1 > num2) {
+                if (num2 == 0) {
+                    System.out.println("Cannot divide by Zero");
+                    return; // End execution since you cannot divide by Zero
+                } else if (num1 > num2) {
                     results = num1 / num2;
                 } else if (num1 < num2) {
                     results = num2 / num1;
-                } else if (num2 != 0) {
-                    results = num1 / num2;
                 } else {
-                    System.out.println("Cannot divide by Zero");
+                    results = num1 / num2;
                 }
                 break;
             default:
