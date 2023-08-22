@@ -2,7 +2,9 @@ package basicCalculator;
 
 import calculator.Calculator;
 import org.junit.jupiter.api.*;
+
 import static org.junit.jupiter.api.Assertions.*;
+
 import java.io.*;
 import java.util.*;
 
@@ -12,9 +14,7 @@ public class CalculatorTest {
     public void setUpScanner() {
         scanner = new Scanner(System.in);
     }
-//    public void setUpStreams() {
-//        System.setOut(new PrintStream(outContent));
-//    }
+
 
     @Test
     public void testAddition() {
@@ -27,8 +27,7 @@ public class CalculatorTest {
 
         restoreSystemOut();
 
-         assertTrue(getConsoleOutput().contains("Answer: 5.0")); //Assuming the input is 1 + 2 = 3
-//        assertEquals(5.0, extractResultFromConsoleOutput(getConsoleOutput()), 0.001);
+        assertTrue(getConsoleOutput().contains("Answer: 5.0")); // 2 + 3 = 5
     }
 
 
@@ -43,8 +42,7 @@ public class CalculatorTest {
 
         restoreSystemOut();
 
-        assertTrue(getConsoleOutput().contains("Answer: 2.0")); // Assuming 5 - 3 - 2
-//        assertEquals(2.0, extractResultFromConsoleOutput(getConsoleOutput()), 0.001);
+        assertTrue(getConsoleOutput().contains("Answer: 2.0")); // 5 - 3 = 2
     }
 
     @Test
@@ -58,8 +56,7 @@ public class CalculatorTest {
 
         restoreSystemOut();
 
-        assertTrue(getConsoleOutput().contains("Answer: 6.0")); //Assuming the input is 1 + 2 = 3
-//        assertEquals(6.0, extractResultFromConsoleOutput(getConsoleOutput()), 0.001);
+        assertTrue(getConsoleOutput().contains("Answer: 6.0")); // 2 * 3 = 6
     }
 
     @Test
@@ -73,8 +70,7 @@ public class CalculatorTest {
 
         restoreSystemOut();
 
-        assertTrue(getConsoleOutput().contains("Answer: 4.0")); //Assuming the input is 1 + 2 = 3
-//        assertEquals(4.0, extractResultFromConsoleOutput(getConsoleOutput()), 0.001);
+        assertTrue(getConsoleOutput().contains("Answer: 4.0")); // 12 / 3 = 4
     }
 
     // Edge Cases
@@ -90,7 +86,7 @@ public class CalculatorTest {
 
         restoreSystemOut();
 
-        assertTrue(getConsoleOutput().contains("Cannot divide by Zero"));
+        assertTrue(getConsoleOutput().contains("Cannot divide by Zero")); // 5 / 0 = Cannot divide by Zero
     }
 
     @Test
@@ -128,14 +124,14 @@ public class CalculatorTest {
         return outContent.toString().trim();
     }
 
-    private double extractResultFromConsoleOutput(String consoleOutput) {
-        String prefix = "Answer: ";
-        int startIndex = consoleOutput.indexOf(prefix) + prefix.length();
-        int endIndex = consoleOutput.indexOf('\n', startIndex);
-        String resultString = consoleOutput.substring(startIndex, endIndex).trim();
-
-        return Double.parseDouble(resultString);
-    }
+//    private double extractResultFromConsoleOutput(String consoleOutput) {
+//        String prefix = "Answer: ";
+//        int startIndex = consoleOutput.indexOf(prefix) + prefix.length();
+//        int endIndex = consoleOutput.indexOf('\n', startIndex);
+//        String resultString = consoleOutput.substring(startIndex, endIndex).trim();
+//
+//        return Double.parseDouble(resultString);
+//    }
 
     @AfterEach
     public void restoreStreams() {
