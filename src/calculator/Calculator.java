@@ -17,11 +17,12 @@ public class Calculator {
             System.out.println("2: Subtraction");
             System.out.println("3: Multiplication");
             System.out.println("4: Division");
-            System.out.println("Please select a Math Operator (1 | 2 | 3 | 4 |");
+            System.out.println("Please select a Math Operator (1 | 2 | 3 | 4)");
 
             while (true) {
             try {
                 operator = scanner.nextInt();
+
                 if (operator >= 1 && operator <= 4) {
                     break;
                 } else {
