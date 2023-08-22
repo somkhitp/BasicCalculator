@@ -34,7 +34,6 @@ public class Calculator {
         int operator;
 
 // Selecting Which Operator To Use
-//        while (true) {
         System.out.println("Calculator Menu:");
         System.out.println("1: Addition");
         System.out.println("2: Subtraction");
@@ -72,11 +71,9 @@ public class Calculator {
                 num1 = scanner.nextDouble();
                 scanner.nextLine();
                 validInput = true;
-//                break;
             } catch (java.util.InputMismatchException e) {
                 System.out.println("Must Be a Number!!");
                 scanner.nextLine();
-//                return;
             }
             if (validInput) {
                 break; //Break the loop only if valid input was obtained
@@ -97,11 +94,9 @@ public class Calculator {
                 num2 = scanner.nextDouble();
                 scanner.nextLine();
                 validInput = true;
-//                break;
             } catch (java.util.InputMismatchException e) {
                 System.out.println("Must Be a Number!!");
                 scanner.nextLine();
-//                return;
             }
             if (validInput) {
                 break; // Break the loop only if valid input has been obtained
