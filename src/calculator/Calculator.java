@@ -3,23 +3,46 @@ package calculator;
 import java.util.*;
 
 public class Calculator {
+
+    // Global Variables
+
+    private static double add(double a, double b) {
+        return a + b;
+    }
+
+    private static double subtract(double a, double b) {
+        return Math.abs(a - b);
+    }
+
+    private static double multiply(double a, double b) {
+        return a * b;
+    }
+
+    private static double divide(double a, double b) {
+        if (b == 0) {
+            System.out.println("Cannot divide by Zero");
+            return Double.NaN;
+        }
+        return a / b;
+    }
+
     public static void simpleCalculator() {
         Scanner scanner = new Scanner(System.in); //Calling Scanner
 
-        //Variables
-        double results = 0, num1, num2;
+//        //Variables
+        double results = 0, num1 = 0, num2 = 0;
         int operator;
 
 // Selecting Which Operator To Use
 //        while (true) {
-            System.out.println("Calculator Menu:");
-            System.out.println("1: Addition");
-            System.out.println("2: Subtraction");
-            System.out.println("3: Multiplication");
-            System.out.println("4: Division");
-            System.out.println("Please select a Math Operator (1 | 2 | 3 | 4)");
+        System.out.println("Calculator Menu:");
+        System.out.println("1: Addition");
+        System.out.println("2: Subtraction");
+        System.out.println("3: Multiplication");
+        System.out.println("4: Division");
+        System.out.println("Please select a Math Operator (1 | 2 | 3 | 4)");
 
-            while (true) {
+        while (true) {
             try {
                 operator = scanner.nextInt();
 
@@ -38,6 +61,7 @@ public class Calculator {
 
         // Entering First Number
         while (true) {
+            boolean validInput = false;
             try {
                 System.out.println("Enter a number: ");
                 while (!scanner.hasNextDouble()) {
@@ -47,17 +71,22 @@ public class Calculator {
                 }
                 num1 = scanner.nextDouble();
                 scanner.nextLine();
-                break;
+                validInput = true;
+//                break;
             } catch (java.util.InputMismatchException e) {
                 System.out.println("Must Be a Number!!");
                 scanner.nextLine();
-                return;
+//                return;
+            }
+            if (validInput) {
+                break; //Break the loop only if valid input was obtained
             }
         }
 
 
         // Entering Second Number
         while (true) {
+            boolean validInput = false;
             try {
                 System.out.println("Enter second number: ");
                 while (!scanner.hasNextDouble()) {
@@ -67,41 +96,31 @@ public class Calculator {
                 }
                 num2 = scanner.nextDouble();
                 scanner.nextLine();
-                break;
+                validInput = true;
+//                break;
             } catch (java.util.InputMismatchException e) {
                 System.out.println("Must Be a Number!!");
                 scanner.nextLine();
-                return;
+//                return;
+            }
+            if (validInput) {
+                break; // Break the loop only if valid input has been obtained
             }
         }
 
         // Switch Statements
         switch (operator) {
             case 1:
-                results = num1 + num2;
+                results = add(num1, num2);
                 break;
             case 2:
-                if (num1 < num2) {
-                    results = num2 - num1;
-                }
-                else {
-                    results = num1 - num2;
-                }
+                results = subtract(num1, num2);
                 break;
             case 3:
-                results = num1 * num2;
+                results = multiply(num1, num2);
                 break;
             case 4:
-                if (num2 == 0) {
-                    System.out.println("Cannot divide by Zero");
-                    return; // End execution since you cannot divide by Zero
-                } else if (num1 > num2) {
-                    results = num1 / num2;
-                } else if (num1 < num2) {
-                    results = num2 / num1;
-                } else {
-                    results = num1 / num2;
-                }
+                results = divide(num1, num2);
                 break;
             default:
                 System.out.println("Invalid Selection!");
