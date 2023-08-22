@@ -1,7 +1,6 @@
 package calculator;
 
 import java.util.*;
-import java.io.*;
 
 public class Calculator {
     public static void simpleCalculator() {
@@ -9,7 +8,7 @@ public class Calculator {
 
         //Variables
         double results = 0, num1, num2;
-        int operator = 0;
+        int operator;
 
 // Selecting Which Operator To Use
         while (true) {
