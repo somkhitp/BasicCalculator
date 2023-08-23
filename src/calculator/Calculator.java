@@ -23,6 +23,11 @@ public class Calculator {
             System.out.println("Cannot divide by Zero");
             return Double.NaN;
         }
+        if (a < b) {
+            double temp = a;
+            a = b;
+            b = temp;
+        }
         return a / b;
     }
 
