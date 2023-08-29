@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="285f6496-60b6-43bb-9593-73fcdea7db81" name="Changes" comment="Added GitIgnore file">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/bluecatcode_junit_4_11_extended.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_jupiter.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basicCalculator.iml" afterDir="false" />
+    <list default="true" id="285f6496-60b6-43bb-9593-73fcdea7db81" name="Changes" comment="Adding this folder to gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/bluecatcode_junit_4_11_extended.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_jupiter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicCalculator/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/basicCalculator/AppTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/basicCalculator/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basicCalculator/CalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,37 +42,45 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2UKCRKJhp5aHPm8wuvftaItuMzl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.ChangelistConflict&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
-  <component name="RunManager" selected="Application.Calculator">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="basicCalculator" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CalculatorTest">
     <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="calculator.Calculator" />
       <module name="basicCalculator" />
@@ -119,8 +127,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Calculator" />
         <item itemvalue="JUnit.CalculatorTest" />
+        <item itemvalue="Application.Calculator" />
         <item itemvalue="JUnit.CalculatorTest.testSubtraction" />
       </list>
     </recent_temporary>
@@ -174,7 +182,63 @@
       <option name="project" value="LOCAL" />
       <updated>1692733327671</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updated file">
+      <option name="closed" value="true" />
+      <created>1692734657436</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1692734657436</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Removing">
+      <option name="closed" value="true" />
+      <created>1692734735473</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1692734735473</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Quick updates">
+      <option name="closed" value="true" />
+      <created>1692737267619</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1692737267619</updated>
+    </task>
+    <task id="LOCAL-00009" summary="reformatted for easier reading">
+      <option name="closed" value="true" />
+      <created>1692739610325</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1692739610325</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Quick update">
+      <option name="closed" value="true" />
+      <created>1692739766997</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1692739766997</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Resolved division bug">
+      <option name="closed" value="true" />
+      <created>1692765364424</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1692765364424</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Adding this folder to gitignore">
+      <option name="closed" value="true" />
+      <created>1692808516666</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1692808516666</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,6 +285,13 @@
     <MESSAGE value="Added Unit Testing CalculatorTest.java and updated Calculator.java file" />
     <MESSAGE value="Edited typo in README file" />
     <MESSAGE value="Added GitIgnore file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added GitIgnore file" />
+    <MESSAGE value="Updated file" />
+    <MESSAGE value="Removing" />
+    <MESSAGE value="Quick updates" />
+    <MESSAGE value="reformatted for easier reading" />
+    <MESSAGE value="Quick update" />
+    <MESSAGE value="Resolved division bug" />
+    <MESSAGE value="Adding this folder to gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding this folder to gitignore" />
   </component>
 </project>
