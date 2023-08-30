@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="285f6496-60b6-43bb-9593-73fcdea7db81" name="Changes" comment="Adding this folder to gitignore">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/bluecatcode_junit_4_11_extended.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_jupiter.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="285f6496-60b6-43bb-9593-73fcdea7db81" name="Changes" comment="Updates">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicCalculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/basicCalculator/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basicCalculator/App.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/basicCalculator/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basicCalculator/CalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,10 +66,10 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Problems",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -81,8 +78,8 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.CalculatorTest">
-    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="calculator.Calculator" />
+    <configuration name="basicCalculator.Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="basicCalculator.Calculator" />
       <module name="basicCalculator" />
       <extension name="coverage">
         <pattern>
@@ -96,15 +93,37 @@
     </configuration>
     <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="basicCalculator" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="/Library/Java/JavaVirtualMachines/jdk-18.0.2.jdk/Contents/Home" />
+      <option name="PACKAGE_NAME" value="basicCalculator" />
+      <option name="MAIN_CLASS_NAME" value="basicCalculator.CalculatorTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTest.testAddition" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="basicCalculator" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="basicCalculator.*" />
+          <option name="ENABLED" value="false" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="basicCalculator.*" />
+          <option name="ENABLED" value="false" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="basicCalculator.CalculatorTest" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH" value="/Library/Java/JavaVirtualMachines/jdk-18.0.2.jdk/Contents/Home" />
       <option name="PACKAGE_NAME" value="basicCalculator" />
       <option name="MAIN_CLASS_NAME" value="basicCalculator.CalculatorTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="testAddition" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,10 +144,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="basicCalculator" />
+      <option name="ALTERNATIVE_JRE_PATH" value="/Library/Java/JavaVirtualMachines/jdk-18.0.2.jdk/Contents/Home" />
+      <option name="PACKAGE_NAME" value="basicCalculator" />
+      <option name="MAIN_CLASS_NAME" value="basicCalculator.CalculatorTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.basicCalculator.Calculator" />
+      <item itemvalue="JUnit.CalculatorTest.testAddition" />
+      <item itemvalue="JUnit.CalculatorTest" />
+      <item itemvalue="JUnit.CalculatorTest.testSubtraction" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CalculatorTest" />
-        <item itemvalue="Application.Calculator" />
+        <item itemvalue="Application.basicCalculator.Calculator" />
         <item itemvalue="JUnit.CalculatorTest.testSubtraction" />
       </list>
     </recent_temporary>
@@ -238,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692808516666</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Updates">
+      <option name="closed" value="true" />
+      <created>1693338894945</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1693338894945</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -292,6 +336,7 @@
     <MESSAGE value="Quick update" />
     <MESSAGE value="Resolved division bug" />
     <MESSAGE value="Adding this folder to gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding this folder to gitignore" />
+    <MESSAGE value="Updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates" />
   </component>
 </project>
