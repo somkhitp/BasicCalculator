@@ -1,7 +1,17 @@
 *.class
+.class
 *.iml
 .idea/
+.idea/misc.xml
+.idea.vcs.xml
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/uiDesigner.xml
+.idea/workspace.xml
+.idea/jarRepositories.xml
 out/
+*.project
+.project
 # Ignore all XML files except for pom.xml
 *.xml
 !pom.xml
